@@ -258,8 +258,7 @@ section.header-background{
     text-align: center;
     font-weight: 700;
     font-size: 35px;
-    margin-top: 50px;
-    /* margin-bottom: 50px; */
+    margin: 50px 0;
 
 
 
@@ -311,12 +310,7 @@ section.header-background{
     transition: 1s;
 }
 
-.vl{
-    border-left: 6px solid rgb(136, 209, 136);
-    height: 60px;
-    left: 50%;
-    position: absolute;
-}
+
 /* portfolio ends */
 
 
@@ -389,7 +383,8 @@ comment h3{
 
 /* interest */
 .interest-height{
-    height: 550px;
+    height: auto;
+    padding-bottom: 20px;
     margin-top: 40px;
     border-top:4px solid #07cb79;
     background-color: white;
@@ -533,9 +528,11 @@ comment h3{
 
 
 
-@media(max-width: 380px){
+@media(max-width: 420px){
     .portfolio-height{
-        height: 550px;
+        height: auto;
+        padding-bottom: 20px;
+        
         border-top:4px solid #07cb79;
         background-color: white;
         position: relative;
@@ -549,7 +546,8 @@ comment h3{
         border-radius: 10px;
     }
     .interest-height {
-        height: 670px;
+        height: auto;
+        padding-bottom: 20px;
         margin-top: 40px;
         border-top: 4px solid #07cb79;
         background-color: white;
@@ -560,7 +558,7 @@ comment h3{
 
 
 
-@media(max-width: 768px){
+@media(max-width: 700px){
    
     nav{
         padding: 0 30px;
@@ -572,6 +570,14 @@ comment h3{
     .burger{
         display: block;
         transition: 1.5s;
+    }
+    .vl {
+        display: block;
+        justify-content: center;
+        border-left: 6px solid rgb(136, 209, 136);
+        transform: translateX(50%);
+        height: 60px;
+        /* position: absolute; */
     }
     ul li{
         font-size: 17px;
@@ -603,7 +609,7 @@ comment h3{
 }
 
 
-@media(min-width: 996px){
+@media(min-width: 768px){
     section{
         padding: 0px 150px;
     }
